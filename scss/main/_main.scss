@@ -1,0 +1,71 @@
+.hero-banner {
+    @include fullBlock;
+    h1 {
+        font-family: $poppins;
+        font-size: 84px;
+        line-height: 102px;
+        color: $headerFontColor;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 28px;
+    }
+    p{
+        font-family: $sanspro;
+        font-size: 22px;
+        line-height: 33px;
+        color: $headerFontColor;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 47px;
+    }
+    &__image {
+        width: 60%;
+        text-align: center;
+    }
+    @include tablet {
+        h1 {
+            font-size: 72px;
+            line-height: 83px;
+            font-weight: 500;
+            text-align: center;
+            padding-bottom: 22px;    
+        }
+        p {
+            font-size: 22px;
+            line-height: 33px;
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 45px;    
+        }
+        &__image {
+            text-align: center;    
+            img {
+                max-width: 100%;
+            }
+            width: 100%;
+        }
+    }
+    @include mobile {
+        h1 {
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 500;
+            text-align: center;
+            padding-bottom: 27px;    
+        }
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 57px;    
+        }
+        &__image {
+                img {
+                max-width: 100%;
+                align-self: center;
+            }
+            width: 100%;
+        }
+    }
+}

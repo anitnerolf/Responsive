@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/app.css">
+</head>
+
+<body>
+  <header class="main-header block-section">
+    <div class="container">
+      <div class="nav-wrapper" id="js-nav-wrapper">
+        <nav class="primary-nav">
+          <ul>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <button class="nav-toggle" id="js-nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  <main class="main-content block-section">
+    <section class="hero-banner">
+      <div class="container">
+        <div class="hero-banner__text">
+          <h1>Patagonia</h1>
+          <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.<br>Donec viverra eleifend lacus, vitae ullamcor.</p>
+        <div class="hero-banner__image">
+          <picture>
+            <source srcset="./assets/patagonia_desktop.png" media="(min-width:1025px)" />
+            <source srcset="./assets/patagonia_tablet.png" media="(min-width:768px)" />
+            <source srcset="./assets/patagonia_mobile.png" media="(max-width:767px)" />
+            <img src="./assets/patagonia_desktop.png" alt="horses">
+        </picture>
+        </div>
+      </div>
+    </section>
+
+</body>
+<script>
+  //Elementi i cili klikohet
+  var navToggle = document.getElementById('js-nav-toggle');
+  //Elementi i navigimit
+  var navWrapper = document.getElementById('js-nav-wrapper');
+  //Klasa qe jepet kur klikohet
+  var openClass = 'is-active';
+  navToggle.addEventListener('click', function () {
+    navToggle.classList.toggle(openClass)
+    navWrapper.classList.toggle(openClass)
+  });
+</script>
+</html>

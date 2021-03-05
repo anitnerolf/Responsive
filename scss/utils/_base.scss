@@ -1,0 +1,20 @@
+body {
+    font-family: $poppins;
+    color: $headerFontColor;
+    background-color: black;
+  }
+  @mixin fullBlock {
+    width: 100%;
+    float: left;
+  }
+  .block-section {
+    @include fullBlock;
+  }
+  
+  .container {
+    max-width: 864px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  
